@@ -1,0 +1,1121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Fresh and healthy tiffin service with North Indian, South Indian, and Desi-Chinese cuisines">
+    <title>TiffinFresh - Healthy Home-style Meals Delivered</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/tiffin_styles.css">
+
+    <!-- Owl Carousel Main CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Owl Carousel Default Theme -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons@latest/iconfont/tabler-icons.min.css">
+
+    <style>
+
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <!-- Header -->
+        <nav class="navbar navbar-expand-md bg-white shadow-sm fixed-top">
+            <div class="container">
+                <a class="navbar-brand fw-bold" href="#">
+                    <i class="fas fa-utensils me-2"></i>TiffinFresh
+                </a>
+                <button class="navbar-toggler d-md-none" type="button" id="openSidebar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Desktop Nav -->
+                <div class="collapse navbar-collapse justify-content-center d-none d-md-flex">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Menu</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                    </ul>
+                </div>
+
+                <button class="btn btn-success d-none d-md-block">
+                    <i class="fas fa-calendar-alt me-2"></i>View Meal Plans
+                </button>
+            </div>
+        </nav>
+
+        <!-- Mobile Sidebar -->
+        <div class="mobile-sidebar" id="sidebar">
+            <div class="px-4">
+                <button class="btn btn-close float-end" id="closeSidebar" aria-label="Close sidebar"></button>
+                <ul class="nav flex-column mt-4">
+                    <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                    <li class="nav-item mt-3">
+                        <button class="btn btn-success w-100">
+                            <i class="fas fa-calendar-alt me-2"></i>View Meal Plans
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Overlay -->
+        <div class="overlay" id="sidebarOverlay"></div>
+    </header>
+
+    <main>
+        <section class="banner">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6 col-12">
+                        <div class="main-content">
+                            <h1>Special Dish of Lunch <br>with Healthy Ingredients</h1>
+                            <p>Serving North Indian, South Indian, and Desi-Chinese cuisines. Choose from Vegetarian and
+                                Non-Vegetarian meal options prepared with fresh, locally-sourced ingredients.</p>
+
+                            <div class="d-flex gap-3">
+                                <button class="btn btn-success">
+                                    <i class="fas fa-shopping-basket me-2"></i>Order Now
+                                </button>
+                                <button class="btn btn-outline-success">
+                                    <i class="fas fa-phone me-2"></i>Call Us
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-12">
+                        <!-- Owl Carousel for food images -->
+                        <div class="owl-carousel owl-theme">
+                            <div class="item"><img src="img/1.png" alt="Delicious North Indian Thali" class="img-fluid">
+                            </div>
+                            <div class="item"><img src="img/2.png" alt="Healthy South Indian Meal" class="img-fluid">
+                            </div>
+                            <div class="item"><img src="img/3.png" alt="Tasty Desi-Chinese Combo" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+
+    <section style="background-color: #F9F2E6;">
+        <div class="container">
+            <div class="main_menu">
+                <div class="owl-carousel owl-theme owl-loaded menu-carousel">
+                    <div class="owl-stage-outer">
+                        <div class="owl-stage">
+
+                            <div class="owl-item">
+                                <div class="menu_box">
+                                    <img src="img/main-menu/Breakfast .jpg" alt="">
+                                    <span>Breakfast</span>
+                                </div>
+                            </div>
+
+                            <div class="owl-item">
+                                <div class="menu_box">
+                                    <img src="img/main-menu/Lunch.jpg" alt="">
+                                    <span>Lunch</span>
+                                </div>
+                            </div>
+
+                            <div class="owl-item">
+                                <div class="menu_box">
+                                    <img src="img/main-menu/Evening Snacks.jpg" alt="">
+                                    <span>Evening Snacks</span>
+                                </div>
+                            </div>
+
+                            <div class="owl-item">
+                                <div class="menu_box">
+                                    <img src="img/main-menu/Dinner.jpg" alt="">
+                                    <span>Dinner</span>
+                                </div>
+                            </div>
+
+                            <div class="owl-item">
+                                <div class="menu_box">
+                                    <img src="img/main-menu/Salad.jpg" alt="">
+                                    <span>Salad</span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section>
+        <div class="container">
+            <div class="why_section">
+                <h2 class="why_title">Why Choose Us?</h2>
+                <div class="row">
+                    <div class="col-md-6 col-lg-6 col-12">
+                        <div class="why_box">
+                            <div class="why-img"><img src="img/main-menu/icon/balanced-diet - Copy.svg" alt=""></div>
+                            <div>
+                                <h3>Home Made Food</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet aperiam reiciendis,
+                                    maxime veritatis esse minus quia et mollitia excepturi non.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-12">
+                        <div class="why_box">
+                            <div class="why-img"><img src="img/main-menu/icon/delivery-man (1).svg" alt=""></div>
+                            <div>
+                                <h3>Easy Ordering</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet aperiam reiciendis,
+                                    maxime veritatis esse minus quia et mollitia excepturi non.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-12">
+                        <div class="why_box">
+                            <div class="why-img"><img src="img/main-menu/icon/masala-dosa.svg" alt=""></div>
+                            <div>
+                                <h3>Amazing Variety</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet aperiam reiciendis,
+                                    maxime veritatis esse minus quia et mollitia excepturi non.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-12">
+                        <div class="why_box">
+                            <div class="why-img"><img src="img/main-menu/icon/balanced-diet - Copy.svg" alt=""></div>
+                            <div>
+                                <h3>Short Trial</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet aperiam reiciendis,
+                                    maxime veritatis esse minus quia et mollitia excepturi non.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-12">
+                        <div class="why_box">
+                            <div class="why-img"><img src="img/main-menu/icon/cooking.svg" alt=""></div>
+                            <div>
+                                <h3>customized Meals Plan</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet aperiam reiciendis,
+                                    maxime veritatis esse minus quia et mollitia excepturi non.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-12">
+                        <div class="why_box">
+                            <div class="why-img"><img src="img/main-menu/icon/stir-fry.svg" alt=""></div>
+                            <div>
+                                <h3>100% Nutrient-rich</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet aperiam reiciendis,
+                                    maxime veritatis esse minus quia et mollitia excepturi non.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pricing-section">
+        <h2 class="section-title">Meal Plans & Pricing</h2>
+
+        <div class="tab-container">
+            <button class="tab-btn active" onclick="openTab('veg')">Veg Plans</button>
+            <button class="tab-btn" onclick="openTab('non-veg')">Non-Veg Plans</button>
+        </div>
+
+        <div id="veg" class="tab-content" style="display: block;">
+            <div class="plans-container">
+                <div class="plan-card">
+                    <h3 class="plan-title">Daily Tiffin</h3>
+                    <div class="plan-price">₹120/day</div>
+                    <ul class="plan-features">
+                        <li>1 Meal (Lunch or Dinner)</li>
+                        <li>3 Roti + Sabzi + Dal + Rice</li>
+                        <li>Salad & Pickle</li>
+                        <li>Rs 40 Delivery</li>
+                    </ul>
+                    <button class="order-btn">Order Now</button>
+                </div>
+
+                <div class="plan-card">
+                    <h3 class="plan-title">Monthly Plan</h3>
+                    <div class="plan-price">₹3,000/month</div>
+                    <ul class="plan-features">
+                        <li>Lunch + Dinner (60 meals)</li>
+                        <li>4 Roti + 2 Sabzi + Dal + Rice</li>
+                        <li>Weekly Dessert</li>
+                        <li>Free Delivery</li>
+                        <li>5% Discount</li>
+                    </ul>
+                    <button class="order-btn">Order Now</button>
+                </div>
+
+                <div class="plan-card">
+                    <h3 class="plan-title">Custom Plan</h3>
+                    <div class="plan-price">Custom Pricing</div>
+                    <ul class="plan-features">
+                        <li>Jain/Sattvic Options</li>
+                        <li>Diet-Specific Meals</li>
+                        <li>Choose Your Menu</li>
+                        <li>Flexible Delivery</li>
+                        <li>Special Requests</li>
+                    </ul>
+                    <button class="order-btn">Contact Us</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="non-veg" class="tab-content" style="display: none;">
+            <div class="plans-container">
+                <div class="plan-card">
+                    <h3 class="plan-title">Daily Tiffin</h3>
+                    <div class="plan-price">₹150/day</div>
+                    <ul class="plan-features">
+                        <li>1 Meal (Lunch or Dinner)</li>
+                        <li>3 Roti + Non-Veg Curry + Dal + Rice</li>
+                        <li>Salad & Raita</li>
+                        <li>Free Delivery</li>
+                    </ul>
+                    <button class="order-btn">Order Now</button>
+                </div>
+
+                <div class="plan-card">
+                    <h3 class="plan-title">Monthly Plan</h3>
+                    <div class="plan-price">₹4,000/month</div>
+                    <ul class="plan-features">
+                        <li>Lunch + Dinner (60 meals)</li>
+                        <li>4 Roti + Non-Veg Curry + Dal + Rice</li>
+                        <li>Weekly Special (Fish/Chicken)</li>
+                        <li>Free Delivery</li>
+                        <li>5% Discount</li>
+                    </ul>
+                    <button class="order-btn">Order Now</button>
+                </div>
+
+                <div class="plan-card">
+                    <h3 class="plan-title">Custom Plan</h3>
+                    <div class="plan-price">Custom Pricing</div>
+                    <ul class="plan-features">
+                        <li>Choose Meat Preference</li>
+                        <li>Keto/Low-Carb Options</li>
+                        <li>Select Your Menu</li>
+                        <li>Flexible Delivery</li>
+                        <li>Special Requests</li>
+                    </ul>
+                    <button class="order-btn">Contact Us</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="addons-section">
+            <h3 class="addons-title">Add-Ons Available</h3>
+            <div class="addons-grid">
+                <div class="addon-item">Extra Roti <span class="addon-price">₹10</span></div>
+                <div class="addon-item">Extra Curd <span class="addon-price">₹10</span></div>
+                <div class="addon-item">Sweet Dish <span class="addon-price">₹25</span></div>
+                <div class="addon-item">Papad <span class="addon-price">₹5</span></div>
+                <div class="addon-item">Special Sabzi <span class="addon-price">₹30</span></div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="menu-section">
+        <div class="container">
+            <h2 class="section-title">Our Weekly Menu</h2>
+            <p class="section-subtitle">Freshly prepared with seasonal ingredients</p>
+
+            <div class="menu-tabs">
+                <button class="menu-tab active" onclick="showMenu('veg')">Veg Menu</button>
+                <button class="menu-tab" onclick="showMenu('nonveg')">Non-Veg Menu</button>
+                <button class="menu-tab" onclick="showMenu('jain')">Jain Menu</button>
+            </div>
+
+            <!-- Veg Menu -->
+            <div id="veg-menu" class="menu-content">
+                <table class="menu-table">
+                    <thead>
+                        <tr>
+                            <th>Day</th>
+                            <th>Lunch</th>
+                            <th>Dinner</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="day-column">Monday</td>
+                            <td class="meal-column">Paneer Butter Masala, Dal Tadka, Jeera Rice, 3 Roti, Salad</td>
+                            <td class="meal-column">Mix Veg, Dal Fry, Steamed Rice, 3 Roti, Curd</td>
+                        </tr>
+                        <tr>
+                            <td class="day-column">Tuesday</td>
+                            <td class="meal-column">Aloo Gobi, Chana Dal, Rice, 3 Roti, Pickle</td>
+                            <td class="meal-column">Baingan Bharta, Moong Dal, Rice, 3 Roti, Raita</td>
+                        </tr>
+                        <tr>
+                            <td class="day-column">Wednesday</td>
+                            <td class="meal-column">Shahi Paneer, Rajma, Rice, 3 Roti, Salad</td>
+                            <td class="meal-column">Malai Kofta, Arhar Dal, Rice, 3 Roti, Papad</td>
+                        </tr>
+                        <tr>
+                            <td class="day-column">Thursday</td>
+                            <td class="meal-column">Dal Makhani, Bhindi Masala, Rice, 3 Roti, Curd</td>
+                            <td class="meal-column">Kadhai Paneer, Chana Masala, Rice, 3 Roti, Salad</td>
+                        </tr>
+                        <tr>
+                            <td class="day-column">Friday</td>
+                            <td class="meal-column">Vegetable Pulao, Dal Fry, 3 Roti, Raita</td>
+                            <td class="meal-column">Palak Paneer, Moong Dal, Rice, 3 Roti, Pickle</td>
+                        </tr>
+                        <tr>
+                            <td class="day-column">Saturday</td>
+                            <td class="meal-column">Chole Bhature, Rice, Salad</td>
+                            <td class="meal-column">Dal Khichdi, Kadhi, Papad, Ghee</td>
+                        </tr>
+                        <tr>
+                            <td class="day-column">Sunday</td>
+                            <td class="meal-column">Special Thali (3 Sabzi, Dal, Rice, 4 Roti, Sweet, Papad)</td>
+                            <td class="meal-column">Pav Bhaji, Rice, Curd</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Non-Veg Menu (Hidden by default) -->
+            <div id="nonveg-menu" class="menu-content" style="display: none;">
+                <table class="menu-table">
+                    <thead>
+                        <tr>
+                            <th>Day</th>
+                            <th>Lunch</th>
+                            <th>Dinner</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="day-column">Monday</td>
+                            <td class="meal-column">Chicken Curry, Dal Tadka, Jeera Rice, 3 Roti, Salad</td>
+                            <td class="meal-column">Egg Curry, Dal Fry, Steamed Rice, 3 Roti, Curd</td>
+                        </tr>
+                        <tr>
+                            <td class="day-column">Tuesday</td>
+                            <td class="meal-column">Mutton Rogan Josh, Chana Dal, Rice, 3 Roti, Pickle</td>
+                            <td class="meal-column">Chicken Do Pyaza, Moong Dal, Rice, 3 Roti, Raita</td>
+                        </tr>
+                        <tr>
+                            <td class="day-column">Wednesday</td>
+                            <td class="meal-column">Butter Chicken, Rajma, Rice, 3 Roti, Salad</td>
+                            <td class="meal-column">Fish Curry, Arhar Dal, Rice, 3 Roti, Papad</td>
+                        </tr>
+                        <tr>
+                            <td class="day-column">Thursday</td>
+                            <td class="meal-column">Chicken Biryani, Raita, Salad</td>
+                            <td class="meal-column">Kadhai Chicken, Chana Masala, Rice, 3 Roti, Salad</td>
+                        </tr>
+                        <tr>
+                            <td class="day-column">Friday</td>
+                            <td class="meal-column">Egg Fried Rice, Chicken Manchurian</td>
+                            <td class="meal-column">Chicken Tikka Masala, Moong Dal, Rice, 3 Roti, Pickle</td>
+                        </tr>
+                        <tr>
+                            <td class="day-column">Saturday</td>
+                            <td class="meal-column">Mutton Biryani, Raita, Salad</td>
+                            <td class="meal-column">Keema Pav, Rice, Curd</td>
+                        </tr>
+                        <tr>
+                            <td class="day-column">Sunday</td>
+                            <td class="meal-column">Special Non-Veg Thali (2 Meat Curries, Dal, Rice, 4 Roti, Sweet,
+                                Papad)
+                            </td>
+                            <td class="meal-column">Chicken Lollipop, Fried Rice, Curd</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Jain Menu (Hidden by default) -->
+            <div id="jain-menu" class="menu-content" style="display: none;">
+                <table class="menu-table">
+                    <thead>
+                        <tr>
+                            <th>Day</th>
+                            <th>Lunch</th>
+                            <th>Dinner</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="day-column">Monday</td>
+                            <td class="meal-column">Lauki Sabzi, Jain Dal Tadka, Jeera Rice, 3 Roti, Salad</td>
+                            <td class="meal-column">Aloo Shimla Mirch, Jain Dal Fry, Steamed Rice, 3 Roti, Curd</td>
+                        </tr>
+                        <tr>
+                            <td class="day-column">Tuesday</td>
+                            <td class="meal-column">Jain Kadhi, Rice, 3 Roti, Pickle</td>
+                            <td class="meal-column">Jain Sabzi, Moong Dal, Rice, 3 Roti, Raita</td>
+                        </tr>
+                        <tr>
+                            <td class="day-column">Wednesday</td>
+                            <td class="meal-column">Jain Paneer, Rajma (no onion/garlic), Rice, 3 Roti, Salad</td>
+                            <td class="meal-column">Jain Kofta, Arhar Dal, Rice, 3 Roti, Papad</td>
+                        </tr>
+                        <tr>
+                            <td class="day-column">Thursday</td>
+                            <td class="meal-column">Jain Khichdi, Kadhi, Papad</td>
+                            <td class="meal-column">Jain Chana Masala, Rice, 3 Roti, Salad</td>
+                        </tr>
+                        <tr>
+                            <td class="day-column">Friday</td>
+                            <td class="meal-column">Jain Pulao, Dal Fry, 3 Roti, Raita</td>
+                            <td class="meal-column">Jain Sabzi, Moong Dal, Rice, 3 Roti, Pickle</td>
+                        </tr>
+                        <tr>
+                            <td class="day-column">Saturday</td>
+                            <td class="meal-column">Jain Chole (no onion/garlic), Bhature, Rice, Salad</td>
+                            <td class="meal-column">Jain Dal Khichdi, Kadhi, Papad, Ghee</td>
+                        </tr>
+                        <tr>
+                            <td class="day-column">Sunday</td>
+                            <td class="meal-column">Special Jain Thali (3 Sabzi, Dal, Rice, 4 Roti, Sweet, Papad)</td>
+                            <td class="meal-column">Jain Pav Bhaji, Rice, Curd</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <p class="seasonal-note">Menu changes weekly based on seasonal availability of fresh ingredients!</p>
+        </div>
+    </section>
+
+
+    <section class="process-section">
+        <div class="container">
+            <h2 class="section-title">How It Works</h2>
+            <p class="section-subtitle">Get delicious home-style meals in just 3 easy steps</p>
+
+            <div class="steps-container">
+                <!-- Step 1 -->
+                <div class="step">
+                    <div class="step-icon">1</div>
+                    <h3 class="step-title">Choose Your Plan</h3>
+                    <p class="step-desc">
+                        Select Veg/Non-Veg options<br>
+                        Pick Lunch, Dinner, or Both<br>
+                        Choose daily or monthly plan
+                    </p>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="step">
+                    <div class="step-icon">2</div>
+                    <h3 class="step-title">Place Your Order</h3>
+                    <p class="step-desc">
+                        Call/WhatsApp: +91 XXXXX XXXXX<br>
+                        Or order online via our website<br>
+                        Customize with special requests
+                    </p>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="step">
+                    <div class="step-icon">3</div>
+                    <h3 class="step-title">Enjoy Delivery</h3>
+                    <p class="step-desc">
+                        Lunch delivered by 12:30 PM<br>
+                        Dinner delivered by 7:30 PM<br>
+                        Hot & fresh in hygienic packaging
+                    </p>
+                </div>
+            </div>
+
+            <a href="#order-now" class="cta-button">Order Now</a>
+        </div>
+    </section>
+
+
+
+    <section class="testimonials-section">
+        <div class="container">
+            <h2 class="section-title">What Our Customers Say</h2>
+            <p class="section-subtitle">Don't just take our word for it</p>
+
+            <div class="testimonials-container">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card">
+                    <p class="testimonial-text">
+                        Best tiffin in Andheri! Tastes just like mom's cooking! I've been ordering daily for 6 months
+                        and
+                        never been disappointed.
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">R</div>
+                        <div class="author-info">
+                            <h4>Riya Sharma</h4>
+                            <p>Lokhandwala, Regular Customer</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card">
+                    <p class="testimonial-text">
+                        The hygiene and taste are unmatched. As a working professional, this service has been a
+                        lifesaver
+                        for my lunch routine.
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">A</div>
+                        <div class="author-info">
+                            <h4>Arjun Patel</h4>
+                            <p>Andheri East, 8 Months</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card">
+                    <p class="testimonial-text">
+                        Ordered Jain meals for my parents - they love the authenticity and variety. Delivery is always
+                        on
+                        time!
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">P</div>
+                        <div class="author-info">
+                            <h4>Priya Mehta</h4>
+                            <p>Juhu Scheme, Family Plan</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Google Reviews Section -->
+            <div class="google-reviews">
+                <h3 class="reviews-title">
+                    <i class="ti ti-brand-google"></i>
+                    Our Google Reviews
+                </h3>
+
+                <!-- Replace with your actual Google Reviews embed code -->
+                <iframe class="google-embed"
+                    src="https://search.google.com/local/writereview?placeid=ChIJy08ZqMLJ5zsR4ylCAr-zAy8" width="100%"
+                    height="400" frameborder="0" style="border:0;" allowfullscreen>
+                </iframe>
+
+                <p style="margin-top: 20px;">
+                    <a href="https://g.page/r/CTS6V-WBTuUiEAE/review" target="_blank"
+                        style="color: #4285F4; text-decoration: none;">
+                        Read more reviews on Google →
+                    </a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="delivery-section">
+        <div class="container">
+            <h2 class="section-title">Our Delivery Areas</h2>
+            <p class="section-subtitle">Serving fresh meals across Andheri and nearby areas</p>
+
+            <div class="delivery-container">
+                <div class="areas-list">
+                    <h3 class="areas-title">
+                        <i class="ti ti-map-pin"></i>
+                        We Deliver To:
+                    </h3>
+                    <div class="areas-grid">
+                        <div class="area-item">
+                            <i class="ti ti-check"></i>
+                            Chakala
+                        </div>
+                        <div class="area-item">
+                            <i class="ti ti-check"></i>
+                            JB Nagar
+                        </div>
+                        <div class="area-item">
+                            <i class="ti ti-check"></i>
+                            Marol Naka
+                        </div>
+                        <div class="area-item">
+                            <i class="ti ti-check"></i>
+                            Sakinaka
+                        </div>
+                        <div class="area-item">
+                            <i class="ti ti-check"></i>
+                            Asalpha
+                        </div>
+                        <div class="area-item">
+                            <i class="ti ti-check"></i>
+                            Jagruti Nagar
+                        </div>
+                        <div class="area-item">
+                            <i class="ti ti-check"></i>
+                            Andheri MIDC
+                        </div>
+                        <div class="area-item">
+                            <i class="ti ti-check"></i>
+                            Chandivali
+                        </div>
+                        <div class="area-item">
+                            <i class="ti ti-check"></i>
+                            Powai
+                        </div>
+                        <div class="area-item">
+                            <i class="ti ti-check"></i>
+                            Kurla
+                        </div>
+                    </div>
+                </div>
+
+                <div class="map-container">
+                    <!-- Embedded Google Map centered on Andheri East -->
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15082.47866579394!2d72.836319!3d19.1190037!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c9c676000000%3A0xcd5a1e5b4eaf4df5!2sAndheri%20East%2C%20Mumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1620000000000!5m2!1sen!2sin"
+                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy">
+                    </iframe>
+                    <div class="map-overlay">
+                        <i class="ti ti-alert-circle"></i>
+                        Free delivery within 5 km!
+                    </div>
+                </div>
+            </div>
+
+            <div class="delivery-info">
+                <p><i class="ti ti-clock"></i> <strong>Delivery Timings:</strong> Lunch by 12:30 PM | Dinner by 7:30 PM
+                </p>
+                <p><i class="ti ti-info-circle"></i> Additional charges may apply for areas beyond 5 km radius</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="faq-section">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <p class="section-subtitle">Everything you need to know about our service</p>
+
+            <div class="faq-container">
+                <!-- FAQ Item 1 -->
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h3><i class="ti ti-shield-check"></i> Is the food hygienic?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p><strong>Our kitchens are FSSAI-certified!</strong> We follow strict hygiene protocols with
+                            daily
+                            kitchen deep cleaning, chef health checks, and quality-controlled ingredients. All tiffins
+                            are
+                            packed in food-grade containers.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h3><i class="ti ti-calendar-pause"></i> Can I pause my plan?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p><strong>Yes! Just inform us 1 day prior.</strong> You can pause for vacations or when you
+                            have
+                            excess food at home. We'll adjust your billing accordingly.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h3><i class="ti ti-truck-delivery"></i> What are your delivery timings?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Lunch is delivered between <strong>11:30 AM - 12:30 PM</strong> and dinner between
+                            <strong>7:00
+                                PM - 8:00 PM</strong>. We provide 30-minute delivery windows when you subscribe.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 4 -->
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h3><i class="ti ti-currency-rupee"></i> How do payments work?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We accept <strong>UPI, credit/debit cards, and cash on delivery</strong>. Monthly plans
+                            require
+                            advance payment. Daily plans can be paid weekly.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 5 -->
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h3><i class="ti ti-leaf"></i> Do you offer diet-specific meals?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes! We provide <strong>Jain, Keto, Diabetic-friendly, and Low-calorie</strong> options.
+                            Mention
+                            your requirements when ordering.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Trust Badges -->
+            <div class="trust-badges">
+                <div class="badge">
+                    <i class="ti ti-certificate"></i>
+                    FSSAI Certified Kitchen
+                </div>
+                <div class="badge">
+                    <i class="ti ti-clock"></i>
+                    On-time Delivery Guarantee
+                </div>
+                <div class="badge">
+                    <i class="ti ti-star"></i>
+                    1000+ Happy Customers
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="ads_banner">
+                <div class="row">
+                    <div class="col-md-6 col-lg-6 col-12">
+                        <div class="ads">
+                            <img src="img/shop-banner-3.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-lg-3 col-12">
+                        <div class="ads">
+                            <img src="img/shop-banner-4.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-lg-3 col-12">
+                        <div class="ads">
+                            <img src="img/shop-banner-5.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Ready for Homely Meals?</h2>
+            <p class="section-subtitle">Get started in just 2 minutes</p>
+
+            <div class="contact-container">
+                <!-- Quick Contact -->
+                <div class="quick-contact">
+                    <h3 style="color: #2c3e50; margin-bottom: 20px;">Quick Connect</h3>
+
+                    <div class="contact-methods">
+                        <!-- Phone -->
+                        <div class="contact-card" onclick="window.location.href='tel:+91XXXXXXXXXX'">
+                            <div class="contact-icon">
+                                <i class="ti ti-phone"></i>
+                            </div>
+                            <div class="contact-info">
+                                <h3>Call Us</h3>
+                                <p><a href="tel:+91XXXXXXXXXX">+91 XXXXX XXXXX</a> (10AM - 8PM)</p>
+                            </div>
+                        </div>
+
+                        <!-- WhatsApp -->
+                        <div class="contact-card" onclick="window.location.href='https://wa.me/91XXXXXXXXXX'">
+                            <div class="contact-icon" style="background: #25D366;">
+                                <i class="ti ti-brand-whatsapp"></i>
+                            </div>
+                            <div class="contact-info">
+                                <h3>WhatsApp</h3>
+                                <p><a href="https://wa.me/91XXXXXXXXXX">Message us instantly</a></p>
+                            </div>
+                        </div>
+
+                        <!-- Address -->
+                        <div class="contact-card">
+                            <div class="contact-icon" style="background: #3498db;">
+                                <i class="ti ti-map-pin"></i>
+                            </div>
+                            <div class="contact-info">
+                                <h3>Our Kitchen</h3>
+                                <p>Food Street, Andheri East, Mumbai - 400069</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="margin-top: 30px; text-align: center;">
+                        <p><strong>Today's Special:</strong> Paneer Butter Masala + Jeera Rice</p>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form">
+                    <h3 style="color: #2c3e50; margin-bottom: 20px;">Start Your Tiffin Service</h3>
+
+                    <form id="tiffinForm">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" class="form-control" placeholder="Enter your name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Mobile Number</label>
+                            <input type="tel" id="phone" class="form-control" placeholder="Enter 10-digit number"
+                                required>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Meal Preference</label>
+                            <div class="radio-group">
+                                <div class="radio-option">
+                                    <input type="radio" id="veg" name="preference" value="veg" checked>
+                                    <label for="veg">Vegetarian</label>
+                                </div>
+                                <div class="radio-option">
+                                    <input type="radio" id="nonveg" name="preference" value="nonveg">
+                                    <label for="nonveg">Non-Vegetarian</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="plan">Select Plan</label>
+                            <select id="plan" class="form-control">
+                                <option value="">-- Choose Plan --</option>
+                                <option value="daily">Daily Tiffin (1 Meal)</option>
+                                <option value="monthly">Monthly Plan (Lunch+Dinner)</option>
+                                <option value="custom">Custom Plan</option>
+                            </select>
+                        </div>
+
+                        <button type="submit" class="submit-btn">
+                            <i class="ti ti-send" style="margin-right: 8px;"></i>
+                            Get Started Now
+                        </button>
+                    </form>
+
+                    <div class="guarantee-badge">
+                        <i class="ti ti-shield-check" style="color: #27ae60;"></i>
+                        <strong>Hygiene Guarantee:</strong> FSSAI Certified Kitchen | Daily Temperature Checks
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
+
+    <!-- jQuery (required for Owl Carousel) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Owl Carousel Main JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Carousel Initialization AFTER jQuery and Owl are loaded -->
+    <script>
+        $(document).ready(function () {
+            $(".owl-carousel").owlCarousel({
+                items: 1,
+                loop: true,
+                autoplay: true,
+                autoplayTimeout: 3000,
+                dots: false,
+            });
+        });
+    </script>
+
+    <script>
+        $(".menu-carousel").owlCarousel({
+            loop: true,
+            margin: 20,
+            autoplay: true,
+            autoplayTimeout: 4000,
+            autoplayHoverPause: true,
+            smartSpeed: 700,
+            dots: true,
+            nav: false,
+            responsive: {
+                0: { items: 1 },
+                576: { items: 2 },
+                768: { items: 3 },
+                992: { items: 5 }
+            }
+        });
+    </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const openSidebar = document.getElementById('openSidebar');
+            const closeSidebar = document.getElementById('closeSidebar');
+            const sidebar = document.getElementById('sidebar');
+            const overlay = document.getElementById('sidebarOverlay');
+
+            openSidebar.addEventListener('click', () => {
+                sidebar.classList.add('show');
+                overlay.classList.add('show');
+                document.body.style.overflow = 'hidden';
+            });
+
+            closeSidebar.addEventListener('click', () => {
+                sidebar.classList.remove('show');
+                overlay.classList.remove('show');
+                document.body.style.overflow = '';
+            });
+
+            overlay.addEventListener('click', () => {
+                sidebar.classList.remove('show');
+                overlay.classList.remove('show');
+                document.body.style.overflow = '';
+            });
+        });
+    </script>
+
+    <script>
+        function openTab(tabName) {
+            // Hide all tab content
+            const tabContents = document.getElementsByClassName("tab-content");
+            for (let i = 0; i < tabContents.length; i++) {
+                tabContents[i].style.display = "none";
+            }
+
+            // Remove active class from all buttons
+            const tabButtons = document.getElementsByClassName("tab-btn");
+            for (let i = 0; i < tabButtons.length; i++) {
+                tabButtons[i].className = tabButtons[i].className.replace(" active", "");
+            }
+
+            // Show the current tab and add active class to the button
+            document.getElementById(tabName).style.display = "block";
+            event.currentTarget.className += " active";
+        }
+
+        // Optional: Add to cart functionality for add-ons
+        document.querySelectorAll('.addon-item').forEach(item => {
+            item.addEventListener('click', function () {
+                this.classList.toggle('selected');
+                if (this.classList.contains('selected')) {
+                    this.style.backgroundColor = '#e3f7eb';
+                    this.style.border = '1px solid #27ae60';
+                } else {
+                    this.style.backgroundColor = '#f8f9fa';
+                    this.style.border = 'none';
+                }
+            });
+        });
+    </script>
+
+    <script>
+        function showMenu(menuType) {
+            // Hide all menu tables
+            document.querySelectorAll('.menu-content').forEach(content => {
+                content.style.display = 'none';
+            });
+
+            // Remove active class from all tabs
+            document.querySelectorAll('.menu-tab').forEach(tab => {
+                tab.classList.remove('active');
+            });
+
+            // Show selected menu and activate tab
+            document.getElementById(menuType + '-menu').style.display = 'block';
+            event.currentTarget.classList.add('active');
+        }
+    </script>
+
+    <script>
+        function toggleFAQ(element) {
+            const faqItem = element.parentElement;
+            const answer = faqItem.querySelector('.faq-answer');
+
+            // Toggle active class
+            faqItem.classList.toggle('active');
+
+            // Toggle answer visibility
+            if (faqItem.classList.contains('active')) {
+                answer.style.maxHeight = answer.scrollHeight + 'px';
+            } else {
+                answer.style.maxHeight = '0';
+            }
+
+            // Close other open FAQs
+            document.querySelectorAll('.faq-item').forEach(item => {
+                if (item !== faqItem && item.classList.contains('active')) {
+                    item.classList.remove('active');
+                    item.querySelector('.faq-answer').style.maxHeight = '0';
+                }
+            });
+        }
+    </script>
+
+    <script>
+        document.getElementById('tiffinForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            // Get form values
+            const name = document.getElementById('name').value;
+            const phone = document.getElementById('phone').value;
+            const preference = document.querySelector('input[name="preference"]:checked').value;
+            const plan = document.getElementById('plan').value;
+
+            // Here you would typically send this data to your backend
+            // For demo, we'll show an alert and WhatsApp redirect
+            const whatsappMsg = `Hi! I'm ${name}. I want to order ${preference} ${plan} plan. My number is ${phone}.`;
+            const whatsappUrl = `https://wa.me/91XXXXXXXXXX?text=${encodeURIComponent(whatsappMsg)}`;
+
+            alert('Redirecting to WhatsApp to confirm your order!');
+            window.location.href = whatsappUrl;
+        });
+    </script>
+
+</body>
+
+</html>
