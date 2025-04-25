@@ -38,7 +38,7 @@
         <nav class="navbar navbar-expand-md bg-white shadow-sm fixed-top">
             <div class="container">
                 <a class="navbar-brand fw-bold" href="#">
-                    <i class="fas fa-utensils me-2"></i>TiffinFresh
+                    <img src="img/healthy-feats-logo_1.png" alt="">
                 </a>
                 <button class="navbar-toggler d-md-none" type="button" id="openSidebar" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -46,12 +46,12 @@
 
                 <!-- Desktop Nav -->
                 <div class="collapse navbar-collapse justify-content-center d-none d-md-flex">
-                    <ul class="navbar-nav">
+                    <!-- <ul class="navbar-nav">
                         <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
                         <li class="nav-item"><a class="nav-link" href="#">Menu</a></li>
                         <li class="nav-item"><a class="nav-link" href="#">About</a></li>
                         <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
-                    </ul>
+                    </ul> -->
                 </div>
 
                 <button class="btn btn-success d-none d-md-block">
@@ -64,7 +64,7 @@
         <div class="mobile-sidebar" id="sidebar">
             <div class="px-4">
                 <button class="btn btn-close float-end" id="closeSidebar" aria-label="Close sidebar"></button>
-                <ul class="nav flex-column mt-4">
+                <!-- <ul class="nav flex-column mt-4">
                     <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Menu</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">About</a></li>
@@ -74,7 +74,7 @@
                             <i class="fas fa-calendar-alt me-2"></i>View Meal Plans
                         </button>
                     </li>
-                </ul>
+                </ul> -->
             </div>
         </div>
 
@@ -103,15 +103,62 @@
                         </div>
                     </div>
                     <div class="col-md-6 col-12">
-                        <!-- Owl Carousel for food images -->
-                        <div class="owl-carousel owl-theme">
-                            <div class="item"><img src="img/1.png" alt="Delicious North Indian Thali" class="img-fluid">
-                            </div>
-                            <div class="item"><img src="img/2.png" alt="Healthy South Indian Meal" class="img-fluid">
-                            </div>
-                            <div class="item"><img src="img/3.png" alt="Tasty Desi-Chinese Combo" class="img-fluid">
+
+                        <div class="contact-form">
+                            <h3 style="color: #2c3e50; margin-bottom: 20px;">Start Your Tiffin Service</h3>
+
+                            <form id="tiffinForm">
+                                <div class="form-group">
+                                    <label for="name">Your Name</label>
+                                    <input type="text" id="name" class="form-control" placeholder="Enter your name"
+                                        required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="phone">Mobile Number</label>
+                                    <input type="tel" id="phone" class="form-control"
+                                        placeholder="Enter 10-digit number" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label>Meal Preference</label>
+                                    <div class="radio-group">
+                                        <div class="radio-option">
+                                            <input type="radio" id="veg" name="preference" value="veg" checked>
+                                            <label for="veg">Vegetarian</label>
+                                        </div>
+                                        <div class="radio-option">
+                                            <input type="radio" id="nonveg" name="preference" value="nonveg">
+                                            <label for="nonveg">Non-Vegetarian</label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="plan">Select Plan</label>
+                                    <select id="plan" class="form-control">
+                                        <option value="">-- Choose Plan --</option>
+                                        <option value="daily">Daily Tiffin (1 Meal)</option>
+                                        <option value="monthly">Monthly Plan (Lunch+Dinner)</option>
+                                        <option value="custom">Custom Plan</option>
+                                    </select>
+                                </div>
+
+                                <button type="submit" class="submit-btn">
+                                    <i class="ti ti-send" style="margin-right: 8px;"></i>
+                                    Get Started Now
+                                </button>
+                            </form>
+
+                            <div class="guarantee-badge">
+                                <i class="ti ti-shield-check" style="color: #27ae60;"></i>
+                                <strong>Hygiene Guarantee:</strong> FSSAI Certified Kitchen | Daily Temperature Checks
                             </div>
                         </div>
+
+
+
+
                     </div>
                 </div>
             </div>
@@ -123,6 +170,7 @@
     <section style="background-color: #F9F2E6;">
         <div class="container">
             <div class="main_menu">
+                <h2>Recommended For You</h2>
                 <div class="owl-carousel owl-theme owl-loaded menu-carousel">
                     <div class="owl-stage-outer">
                         <div class="owl-stage">
@@ -130,35 +178,35 @@
                             <div class="owl-item">
                                 <div class="menu_box">
                                     <img src="img/main-menu/Breakfast .jpg" alt="">
-                                    <span>Breakfast</span>
+                                    <span>Regular Veg Elite Meal</span>
                                 </div>
                             </div>
 
                             <div class="owl-item">
                                 <div class="menu_box">
                                     <img src="img/main-menu/Lunch.jpg" alt="">
-                                    <span>Lunch</span>
+                                    <span>Regular Non Veg Elite Meal</span>
                                 </div>
                             </div>
 
                             <div class="owl-item">
                                 <div class="menu_box">
                                     <img src="img/main-menu/Evening Snacks.jpg" alt="">
-                                    <span>Evening Snacks</span>
+                                    <span>High Protein Veg Elite Meal</span>
                                 </div>
                             </div>
 
                             <div class="owl-item">
                                 <div class="menu_box">
                                     <img src="img/main-menu/Dinner.jpg" alt="">
-                                    <span>Dinner</span>
+                                    <span>High Protein Non Veg Plus Meal</span>
                                 </div>
                             </div>
 
                             <div class="owl-item">
                                 <div class="menu_box">
                                     <img src="img/main-menu/Salad.jpg" alt="">
-                                    <span>Salad</span>
+                                    <span>Diet Veg Elite Meal</span>
                                 </div>
                             </div>
 
@@ -166,6 +214,444 @@
                     </div>
                 </div>
 
+            </div>
+        </div>
+    </section>
+
+
+    <section class="pricing-section">
+        <div class="container">
+            <div class="pricing-header">
+                <h1 class="pricing-title">Meal Plans & Pricing</h1>
+            </div>
+
+            <div class="pricing-tabs">
+                <button class="pricing-tab active" onclick="showPlanType('vegetarian')">Vegetarian Plans</button>
+                <button class="pricing-tab" onclick="showPlanType('nonvegetarian')">Non-Vegetarian Plans</button>
+            </div>
+
+            <!-- Vegetarian Meals -->
+            <div id="vegetarian-plans" class="pricing-content active">
+                <!-- Veg Mini Meal -->
+                <div class="meal-plan-card">
+                    <div class="meal-plan vegetarian-plan">
+                        <div class="meal-image-container">
+                            <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+                                alt="Vegetarian Mini Meal" class="meal-image">
+                            <div class="trial-badge">1-Day Trial ₹80</div>
+                        </div>
+                        <div class="meal-header">
+                            <span class="meal-category">Mini Meal (Veg)</span>
+                            <span class="meal-rate">₹90/meal</span>
+                        </div>
+                        <div class="meal-details">
+                            <div class="meal-features-list">
+                                <span class="meal-feature">1 Vegetable Dish</span>
+                                <span class="meal-feature">1 Dal</span>
+                                <span class="meal-feature">2 Chapati</span>
+                                <span class="meal-feature">1 Salad</span>
+                            </div>
+                            <p class="delivery-info">*Delivery charges applicable</p>
+
+                            <div class="plan-options">
+                                <div class="plan-option">
+                                    <span class="option-name">1 Day Trial</span>
+                                    <div class="option-price">
+                                        <span class="discounted-price">₹80</span>
+                                        <span class="discount-badge">Limited Offer</span>
+                                    </div>
+                                </div>
+                                <div class="plan-option">
+                                    <span class="option-name">3 Days</span>
+                                    <div class="option-price">
+                                        <span class="original-price">₹270</span>
+                                        <span class="discounted-price">₹258</span>
+                                        <span class="discount-badge">5% OFF</span>
+                                    </div>
+                                </div>
+                                <div class="plan-option">
+                                    <span class="option-name">1 Week</span>
+                                    <div class="option-price">
+                                        <span class="original-price">₹630</span>
+                                        <span class="discounted-price">₹598</span>
+                                        <span class="discount-badge">5% OFF</span>
+                                    </div>
+                                </div>
+                                <div class="plan-option">
+                                    <span class="option-name">2 Weeks</span>
+                                    <div class="option-price">
+                                        <span class="original-price">₹1260</span>
+                                        <span class="discounted-price">₹1166</span>
+                                        <span class="discount-badge">7% OFF</span>
+                                    </div>
+                                </div>
+                                <div class="plan-option">
+                                    <span class="option-name">1 Month</span>
+                                    <div class="option-price">
+                                        <span class="original-price">₹2520</span>
+                                        <span class="discounted-price">₹2268</span>
+                                        <span class="discount-badge">10% OFF</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <button class="order-button">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Veg Plus Meal -->
+                <div class="meal-plan-card">
+                    <div class="popular-badge">Most Popular</div>
+                    <div class="meal-plan vegetarian-plan popular">
+                        <div class="meal-image-container">
+                            <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+                                alt="Vegetarian Plus Meal" class="meal-image">
+                            <div class="trial-badge">1-Day Trial ₹110</div>
+                        </div>
+                        <div class="meal-header">
+                            <span class="meal-category">Plus Meal (Veg)</span>
+                            <span class="meal-rate">₹120/meal</span>
+                        </div>
+                        <div class="meal-details">
+                            <div class="meal-features-list">
+                                <span class="meal-feature">1 Vegetable Dish</span>
+                                <span class="meal-feature">1 Dal</span>
+                                <span class="meal-feature">3 Chapati</span>
+                                <span class="meal-feature">1 Rice</span>
+                                <span class="meal-feature">1 Salad/Soup</span>
+                            </div>
+                            <p class="delivery-info">*Delivery charges applicable</p>
+
+                            <div class="plan-options">
+                                <div class="plan-option">
+                                    <span class="option-name">1 Day Trial</span>
+                                    <div class="option-price">
+                                        <span class="discounted-price">₹110</span>
+                                        <span class="discount-badge">Limited Offer</span>
+                                    </div>
+                                </div>
+                                <div class="plan-option">
+                                    <span class="option-name">3 Days</span>
+                                    <div class="option-price">
+                                        <span class="original-price">₹360</span>
+                                        <span class="discounted-price">₹342</span>
+                                        <span class="discount-badge">5% OFF</span>
+                                    </div>
+                                </div>
+                                <div class="plan-option">
+                                    <span class="option-name">1 Week</span>
+                                    <div class="option-price">
+                                        <span class="original-price">₹840</span>
+                                        <span class="discounted-price">₹798</span>
+                                        <span class="discount-badge">5% OFF</span>
+                                    </div>
+                                </div>
+                                <div class="plan-option">
+                                    <span class="option-name">2 Weeks</span>
+                                    <div class="option-price">
+                                        <span class="original-price">₹1680</span>
+                                        <span class="discounted-price">₹1554</span>
+                                        <span class="discount-badge">7% OFF</span>
+                                    </div>
+                                </div>
+                                <div class="plan-option">
+                                    <span class="option-name">1 Month</span>
+                                    <div class="option-price">
+                                        <span class="original-price">₹3360</span>
+                                        <span class="discounted-price">₹3024</span>
+                                        <span class="discount-badge">10% OFF</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <button class="order-button">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Veg Elite Meal -->
+                <div class="meal-plan-card">
+                    <div class="meal-plan vegetarian-plan">
+                        <div class="meal-image-container">
+                            <img src="https://images.unsplash.com/photo-1547592180-85f173990554?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+                                alt="Vegetarian Elite Meal" class="meal-image">
+                            <div class="trial-badge">1-Day Trial ₹140</div>
+                        </div>
+                        <div class="meal-header">
+                            <span class="meal-category">Elite Meal (Veg)</span>
+                            <span class="meal-rate">₹150/meal</span>
+                        </div>
+                        <div class="meal-details">
+                            <div class="meal-features-list">
+                                <span class="meal-feature">1 Gravy Vegetable</span>
+                                <span class="meal-feature">1 Dry Vegetable</span>
+                                <span class="meal-feature">1 Dal</span>
+                                <span class="meal-feature">4 Chapati</span>
+                                <span class="meal-feature">1 Rice</span>
+                                <span class="meal-feature">1 Salad/Soup</span>
+                                <span class="meal-feature">1 Dessert</span>
+                            </div>
+                            <p class="delivery-info">*Delivery charges applicable</p>
+
+                            <div class="plan-options">
+                                <div class="plan-option">
+                                    <span class="option-name">1 Day Trial</span>
+                                    <div class="option-price">
+                                        <span class="discounted-price">₹140</span>
+                                        <span class="discount-badge">Limited Offer</span>
+                                    </div>
+                                </div>
+                                <div class="plan-option">
+                                    <span class="option-name">3 Days</span>
+                                    <div class="option-price">
+                                        <span class="original-price">₹450</span>
+                                        <span class="discounted-price">₹428</span>
+                                        <span class="discount-badge">5% OFF</span>
+                                    </div>
+                                </div>
+                                <div class="plan-option">
+                                    <span class="option-name">1 Week</span>
+                                    <div class="option-price">
+                                        <span class="original-price">₹1050</span>
+                                        <span class="discounted-price">₹998</span>
+                                        <span class="discount-badge">5% OFF</span>
+                                    </div>
+                                </div>
+                                <div class="plan-option">
+                                    <span class="option-name">2 Weeks</span>
+                                    <div class="option-price">
+                                        <span class="original-price">₹2100</span>
+                                        <span class="discounted-price">₹1943</span>
+                                        <span class="discount-badge">7% OFF</span>
+                                    </div>
+                                </div>
+                                <div class="plan-option">
+                                    <span class="option-name">1 Month</span>
+                                    <div class="option-price">
+                                        <span class="original-price">₹4200</span>
+                                        <span class="discounted-price">₹3780</span>
+                                        <span class="discount-badge">10% OFF</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <button class="order-button">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Non-Vegetarian Meals -->
+            <div id="nonvegetarian-plans" class="pricing-content">
+                <!-- Non-Veg Mini Meal -->
+                <div class="meal-plan-card">
+                    <div class="meal-plan nonvegetarian-plan">
+                        <div class="meal-image-container">
+                            <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+                                alt="Non-Vegetarian Mini Meal" class="meal-image">
+                            <div class="trial-badge">1-Day Trial ₹100</div>
+                        </div>
+                        <div class="meal-header">
+                            <span class="meal-category">Mini Meal (Non-Veg)</span>
+                            <span class="meal-rate">₹110/meal</span>
+                        </div>
+                        <div class="meal-details">
+                            <div class="meal-features-list">
+                                <span class="meal-feature">1 Chicken Curry</span>
+                                <span class="meal-feature">1 Dal</span>
+                                <span class="meal-feature">2 Chapati</span>
+                                <span class="meal-feature">1 Salad</span>
+                            </div>
+                            <p class="delivery-info">*Delivery charges applicable</p>
+
+                            <div class="plan-options">
+                                <div class="plan-option">
+                                    <span class="option-name">1 Day Trial</span>
+                                    <div class="option-price">
+                                        <span class="discounted-price">₹100</span>
+                                        <span class="discount-badge">Limited Offer</span>
+                                    </div>
+                                </div>
+                                <div class="plan-option">
+                                    <span class="option-name">3 Days</span>
+                                    <div class="option-price">
+                                        <span class="original-price">₹330</span>
+                                        <span class="discounted-price">₹314</span>
+                                        <span class="discount-badge">5% OFF</span>
+                                    </div>
+                                </div>
+                                <div class="plan-option">
+                                    <span class="option-name">1 Week</span>
+                                    <div class="option-price">
+                                        <span class="original-price">₹770</span>
+                                        <span class="discounted-price">₹732</span>
+                                        <span class="discount-badge">5% OFF</span>
+                                    </div>
+                                </div>
+                                <div class="plan-option">
+                                    <span class="option-name">2 Weeks</span>
+                                    <div class="option-price">
+                                        <span class="original-price">₹1540</span>
+                                        <span class="discounted-price">₹1425</span>
+                                        <span class="discount-badge">7% OFF</span>
+                                    </div>
+                                </div>
+                                <div class="plan-option">
+                                    <span class="option-name">1 Month</span>
+                                    <div class="option-price">
+                                        <span class="original-price">₹3080</span>
+                                        <span class="discounted-price">₹2772</span>
+                                        <span class="discount-badge">10% OFF</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <button class="order-button">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Non-Veg Plus Meal -->
+                <div class="meal-plan-card">
+                    <div class="popular-badge">Most Popular</div>
+                    <div class="meal-plan nonvegetarian-plan popular">
+                        <div class="meal-image-container">
+                            <img src="https://images.unsplash.com/photo-1559847844-5315695dadae?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+                                alt="Non-Vegetarian Plus Meal" class="meal-image">
+                            <div class="trial-badge">1-Day Trial ₹130</div>
+                        </div>
+                        <div class="meal-header">
+                            <span class="meal-category">Plus Meal (Non-Veg)</span>
+                            <span class="meal-rate">₹140/meal</span>
+                        </div>
+                        <div class="meal-details">
+                            <div class="meal-features-list">
+                                <span class="meal-feature">1 Chicken Curry</span>
+                                <span class="meal-feature">1 Dal</span>
+                                <span class="meal-feature">3 Chapati</span>
+                                <span class="meal-feature">1 Rice</span>
+                                <span class="meal-feature">1 Salad/Soup</span>
+                            </div>
+                            <p class="delivery-info">*Delivery charges applicable</p>
+
+                            <div class="plan-options">
+                                <div class="plan-option">
+                                    <span class="option-name">1 Day Trial</span>
+                                    <div class="option-price">
+                                        <span class="discounted-price">₹130</span>
+                                        <span class="discount-badge">Limited Offer</span>
+                                    </div>
+                                </div>
+                                <div class="plan-option">
+                                    <span class="option-name">3 Days</span>
+                                    <div class="option-price">
+                                        <span class="original-price">₹420</span>
+                                        <span class="discounted-price">₹399</span>
+                                        <span class="discount-badge">5% OFF</span>
+                                    </div>
+                                </div>
+                                <div class="plan-option">
+                                    <span class="option-name">1 Week</span>
+                                    <div class="option-price">
+                                        <span class="original-price">₹980</span>
+                                        <span class="discounted-price">₹931</span>
+                                        <span class="discount-badge">5% OFF</span>
+                                    </div>
+                                </div>
+                                <div class="plan-option">
+                                    <span class="option-name">2 Weeks</span>
+                                    <div class="option-price">
+                                        <span class="original-price">₹1960</span>
+                                        <span class="discounted-price">₹1813</span>
+                                        <span class="discount-badge">7% OFF</span>
+                                    </div>
+                                </div>
+                                <div class="plan-option">
+                                    <span class="option-name">1 Month</span>
+                                    <div class="option-price">
+                                        <span class="original-price">₹3920</span>
+                                        <span class="discounted-price">₹3528</span>
+                                        <span class="discount-badge">10% OFF</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <button class="order-button">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Non-Veg Elite Meal -->
+                <div class="meal-plan-card">
+                    <div class="meal-plan nonvegetarian-plan">
+                        <div class="meal-image-container">
+                            <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+                                alt="Non-Vegetarian Elite Meal" class="meal-image">
+                            <div class="trial-badge">1-Day Trial ₹160</div>
+                        </div>
+                        <div class="meal-header">
+                            <span class="meal-category">Elite Meal (Non-Veg)</span>
+                            <span class="meal-rate">₹170/meal</span>
+                        </div>
+                        <div class="meal-details">
+                            <div class="meal-features-list">
+                                <span class="meal-feature">1 Chicken Gravy</span>
+                                <span class="meal-feature">1 Egg/Paneer Dish</span>
+                                <span class="meal-feature">1 Dal</span>
+                                <span class="meal-feature">4 Chapati</span>
+                                <span class="meal-feature">1 Rice</span>
+                                <span class="meal-feature">1 Salad/Soup</span>
+                                <span class="meal-feature">1 Dessert</span>
+                            </div>
+                            <p class="delivery-info">*Delivery charges applicable</p>
+
+                            <div class="plan-options">
+                                <div class="plan-option">
+                                    <span class="option-name">1 Day Trial</span>
+                                    <div class="option-price">
+                                        <span class="discounted-price">₹160</span>
+                                        <span class="discount-badge">Limited Offer</span>
+                                    </div>
+                                </div>
+                                <div class="plan-option">
+                                    <span class="option-name">3 Days</span>
+                                    <div class="option-price">
+                                        <span class="original-price">₹510</span>
+                                        <span class="discounted-price">₹485</span>
+                                        <span class="discount-badge">5% OFF</span>
+                                    </div>
+                                </div>
+                                <div class="plan-option">
+                                    <span class="option-name">1 Week</span>
+                                    <div class="option-price">
+                                        <span class="original-price">₹1190</span>
+                                        <span class="discounted-price">₹1131</span>
+                                        <span class="discount-badge">5% OFF</span>
+                                    </div>
+                                </div>
+                                <div class="plan-option">
+                                    <span class="option-name">2 Weeks</span>
+                                    <div class="option-price">
+                                        <span class="original-price">₹2380</span>
+                                        <span class="discounted-price">₹2202</span>
+                                        <span class="discount-badge">7% OFF</span>
+                                    </div>
+                                </div>
+                                <div class="plan-option">
+                                    <span class="option-name">1 Month</span>
+                                    <div class="option-price">
+                                        <span class="original-price">₹4760</span>
+                                        <span class="discounted-price">₹4284</span>
+                                        <span class="discount-badge">10% OFF</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <button class="order-button">Order Now</button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -241,7 +727,7 @@
         </div>
     </section>
 
-    <section class="pricing-section">
+    <!-- <section class="pricing-section">
         <h2 class="section-title">Meal Plans & Pricing</h2>
 
         <div class="tab-container">
@@ -343,8 +829,52 @@
                 <div class="addon-item">Special Sabzi <span class="addon-price">₹30</span></div>
             </div>
         </div>
-    </section>
+    </section> -->
 
+
+    <section class="process-section">
+        <div class="container">
+            <h2 class="section-title">How It Works</h2>
+            <p class="section-subtitle">Get delicious home-style meals in just 3 easy steps</p>
+
+            <div class="steps-container">
+                <!-- Step 1 -->
+                <div class="step">
+                    <div class="step-icon">1</div>
+                    <h3 class="step-title">Choose Your Plan</h3>
+                    <p class="step-desc">
+                        Select Veg/Non-Veg options<br>
+                        Pick Lunch, Dinner, or Both<br>
+                        Choose daily or monthly plan
+                    </p>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="step">
+                    <div class="step-icon">2</div>
+                    <h3 class="step-title">Place Your Order</h3>
+                    <p class="step-desc">
+                        Call/WhatsApp: +91 XXXXX XXXXX<br>
+                        Or order online via our website<br>
+                        Customize with special requests
+                    </p>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="step">
+                    <div class="step-icon">3</div>
+                    <h3 class="step-title">Enjoy Delivery</h3>
+                    <p class="step-desc">
+                        Lunch delivered by 12:30 PM<br>
+                        Dinner delivered by 7:30 PM<br>
+                        Hot & fresh in hygienic packaging
+                    </p>
+                </div>
+            </div>
+
+            <a href="#order-now" class="cta-button">Order Now</a>
+        </div>
+    </section>
 
     <section class="menu-section">
         <div class="container">
@@ -513,53 +1043,6 @@
         </div>
     </section>
 
-
-    <section class="process-section">
-        <div class="container">
-            <h2 class="section-title">How It Works</h2>
-            <p class="section-subtitle">Get delicious home-style meals in just 3 easy steps</p>
-
-            <div class="steps-container">
-                <!-- Step 1 -->
-                <div class="step">
-                    <div class="step-icon">1</div>
-                    <h3 class="step-title">Choose Your Plan</h3>
-                    <p class="step-desc">
-                        Select Veg/Non-Veg options<br>
-                        Pick Lunch, Dinner, or Both<br>
-                        Choose daily or monthly plan
-                    </p>
-                </div>
-
-                <!-- Step 2 -->
-                <div class="step">
-                    <div class="step-icon">2</div>
-                    <h3 class="step-title">Place Your Order</h3>
-                    <p class="step-desc">
-                        Call/WhatsApp: +91 XXXXX XXXXX<br>
-                        Or order online via our website<br>
-                        Customize with special requests
-                    </p>
-                </div>
-
-                <!-- Step 3 -->
-                <div class="step">
-                    <div class="step-icon">3</div>
-                    <h3 class="step-title">Enjoy Delivery</h3>
-                    <p class="step-desc">
-                        Lunch delivered by 12:30 PM<br>
-                        Dinner delivered by 7:30 PM<br>
-                        Hot & fresh in hygienic packaging
-                    </p>
-                </div>
-            </div>
-
-            <a href="#order-now" class="cta-button">Order Now</a>
-        </div>
-    </section>
-
-
-
     <section class="testimonials-section">
         <div class="container">
             <h2 class="section-title">What Our Customers Say</h2>
@@ -616,13 +1099,13 @@
             </div>
 
             <!-- Google Reviews Section -->
-            <div class="google-reviews">
+            <!-- <div class="google-reviews">
                 <h3 class="reviews-title">
                     <i class="ti ti-brand-google"></i>
                     Our Google Reviews
                 </h3>
 
-                <!-- Replace with your actual Google Reviews embed code -->
+            
                 <iframe class="google-embed"
                     src="https://search.google.com/local/writereview?placeid=ChIJy08ZqMLJ5zsR4ylCAr-zAy8" width="100%"
                     height="400" frameborder="0" style="border:0;" allowfullscreen>
@@ -634,7 +1117,7 @@
                         Read more reviews on Google →
                     </a>
                 </p>
-            </div>
+            </div> -->
         </div>
     </section>
 
@@ -939,6 +1422,19 @@
     </section>
 
 
+    <section>
+        <!-- Owl Carousel for food images -->
+        <div class="owl-carousel owl-theme">
+            <div class="item"><img src="img/1.png1" alt="Delicious North Indian Thali" class="img-fluid">
+            </div>
+            <div class="item"><img src="img/2.png1" alt="Healthy South Indian Meal" class="img-fluid">
+            </div>
+            <div class="item"><img src="img/3.png1" alt="Tasty Desi-Chinese Combo" class="img-fluid">
+            </div>
+        </div>
+    </section>
+
+
 
 
 
@@ -987,7 +1483,7 @@
                 0: { items: 1 },
                 576: { items: 2 },
                 768: { items: 3 },
-                992: { items: 5 }
+                992: { items: 4 }
             }
         });
     </script>
@@ -1113,6 +1609,44 @@
 
             alert('Redirecting to WhatsApp to confirm your order!');
             window.location.href = whatsappUrl;
+        });
+    </script>
+
+    <script>
+        function showPlanType(planType) {
+            // Hide all plan contents
+            document.querySelectorAll('.pricing-content').forEach(content => {
+                content.classList.remove('active');
+            });
+
+            // Remove active class from all buttons
+            document.querySelectorAll('.pricing-tab').forEach(tab => {
+                tab.classList.remove('active');
+            });
+
+            // Show the selected plan content
+            document.getElementById(`${planType}-plans`).classList.add('active');
+
+            // Add active class to the clicked button
+            event.currentTarget.classList.add('active');
+        }
+
+        // Add hover effects to meal plans
+        document.querySelectorAll('.meal-plan').forEach(plan => {
+            plan.addEventListener('mouseenter', function () {
+                this.style.transform = 'translateY(-5px)';
+                this.style.boxShadow = '0 10px 25px rgba(0,0,0,0.15)';
+            });
+
+            plan.addEventListener('mouseleave', function () {
+                this.style.transform = 'translateY(0)';
+                this.style.boxShadow = '0 5px 15px rgba(0,0,0,0.1)';
+            });
+        });
+
+        // Initialize - show vegetarian plans by default
+        document.addEventListener('DOMContentLoaded', function () {
+            showPlanType('vegetarian');
         });
     </script>
 

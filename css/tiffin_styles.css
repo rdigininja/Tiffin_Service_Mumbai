@@ -3,6 +3,16 @@
     --secondary-color: #218838;
     --text-color: #333;
     --light-bg: #f8f9fa;
+
+
+    --vegetarian-color: #2ecc71;
+    --vegetarian-light: #d5f5e3;
+    --nonvegetarian-color: #e74c3c;
+    --nonvegetarian-light: #fadbd8;
+    /* --primary-color: #3498db; */
+    --dark-color: #2c3e50;
+    --light-color: #ecf0f1;
+    --highlight-color: #f39c12;
 }
 
 body {
@@ -23,6 +33,10 @@ header {
 .navbar-brand {
     font-size: 1.5rem;
     color: var(--primary-color) !important;
+}
+
+.navbar-brand img {
+    width: 130px;
 }
 
 .nav-link {
@@ -52,8 +66,13 @@ header {
 
 .banner {
     padding: 60px 0;
-    /* background-color: var(--light-bg); */
-    background-color: #000;
+    background-color: #dbffe3;
+    /* background-image: url('../img/Shiny\ Overlay.svg'); */
+    /* Replace with your actual image path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* Adjust as needed */
 }
 
 .main-content h1 {
@@ -1167,5 +1186,330 @@ header {
 @media (max-width: 768px) {
     .contact-container {
         flex-direction: column;
+    }
+}
+
+
+/* ========================= */
+
+.pricing-section {
+    padding: 40px 0;
+}
+
+.pricing-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.pricing-title {
+    color: var(--dark-color);
+    font-size: 2.2rem;
+    position: relative;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+
+.pricing-title:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 4px;
+    background: var(--primary-color);
+}
+
+.pricing-tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    gap: 10px;
+}
+
+.pricing-tab {
+    padding: 12px 30px;
+    background: #ddd;
+    border: none;
+    border-radius: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-size: 1rem;
+}
+
+.pricing-tab.active {
+    background: var(--primary-color);
+    color: white;
+}
+
+.pricing-content {
+    display: none;
+}
+
+.pricing-content.active {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+}
+
+.meal-plan-card {
+    position: relative;
+    width: 100%;
+    max-width: 350px;
+}
+
+.meal-plan {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: all 0.3s;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.meal-plan:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.meal-image-container {
+    height: 180px;
+    overflow: hidden;
+    position: relative;
+}
+
+.meal-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s;
+}
+
+.meal-plan:hover .meal-image {
+    transform: scale(1.05);
+}
+
+.vegetarian-plan .meal-header {
+    background: linear-gradient(135deg, var(--vegetarian-light), #e8f8f0);
+}
+
+.nonvegetarian-plan .meal-header {
+    background: linear-gradient(135deg, var(--nonvegetarian-light), #fdedec);
+}
+
+.meal-header {
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.meal-category {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.vegetarian-plan .meal-category {
+    color: var(--vegetarian-color);
+}
+
+.nonvegetarian-plan .meal-category {
+    color: var(--nonvegetarian-color);
+}
+
+.meal-rate {
+    background: var(--dark-color);
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.vegetarian-plan .meal-rate {
+    background: var(--vegetarian-color);
+}
+
+.nonvegetarian-plan .meal-rate {
+    background: var(--nonvegetarian-color);
+}
+
+.meal-details {
+    padding: 20px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.meal-description {
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.meal-features-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.meal-feature {
+    background: #f0f0f0;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+}
+
+.vegetarian-plan .meal-feature {
+    background: var(--vegetarian-light);
+    color: var(--vegetarian-color);
+}
+
+.nonvegetarian-plan .meal-feature {
+    background: var(--nonvegetarian-light);
+    color: var(--nonvegetarian-color);
+}
+
+.meal-feature:before {
+    content: "✓";
+    margin-right: 5px;
+    font-weight: bold;
+}
+
+.delivery-info {
+    font-size: 0.8rem;
+    color: #999;
+    margin-top: 5px;
+    font-style: italic;
+}
+
+.plan-options {
+    margin-top: 15px;
+    flex-grow: 1;
+}
+
+.plan-option {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px dashed #eee;
+    align-items: center;
+}
+
+.plan-option:last-child {
+    border-bottom: none;
+}
+
+.option-name {
+    font-weight: bold;
+    font-size: 0.95rem;
+}
+
+.option-price {
+    text-align: right;
+}
+
+.original-price {
+    text-decoration: line-through;
+    color: #999;
+    font-size: 0.85rem;
+}
+
+.discounted-price {
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.vegetarian-plan .discounted-price {
+    color: var(--vegetarian-color);
+}
+
+.nonvegetarian-plan .discounted-price {
+    color: var(--nonvegetarian-color);
+}
+
+.discount-badge {
+    color: var(--highlight-color);
+    font-size: 0.75rem;
+    display: block;
+    font-weight: bold;
+}
+
+.order-button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-size: 1rem;
+}
+
+.vegetarian-plan .order-button {
+    background-color: var(--vegetarian-color);
+    color: white;
+}
+
+.nonvegetarian-plan .order-button {
+    background-color: var(--nonvegetarian-color);
+    color: white;
+}
+
+.order-button:hover {
+    background-color: var(--dark-color);
+    color: white;
+    transform: translateY(-2px);
+}
+
+.popular-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: var(--highlight-color);
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    z-index: 2;
+}
+
+.trial-badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 0.7rem;
+    font-weight: bold;
+    z-index: 2;
+}
+
+@media (max-width: 768px) {
+    .pricing-tabs {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pricing-tab {
+        width: 80%;
+        max-width: 250px;
+    }
+
+    .meal-plan-card {
+        max-width: 100%;
     }
 }
