@@ -64,16 +64,51 @@ header {
     transform: translateY(-2px);
 }
 
+/* ====================================== */
+
 .banner {
     padding: 60px 0;
+    position: relative;
     background-color: #dbffe3;
-    /* background-image: url('../img/Shiny\ Overlay.svg'); */
-    /* Replace with your actual image path */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    /* Adjust as needed */
 }
+
+.banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('../img/background_img.webp');
+    background-size: contain;
+    background-position: center;
+    background-repeat: repeat;
+    opacity: 0.5;
+    /* Adjust opacity (0.0 to 1.0) */
+    z-index: 1;
+}
+
+.banner-content {
+    position: relative;
+    z-index: 2;
+}
+
+.main-content,
+.contact-form {
+    position: relative;
+    z-index: 2;
+}
+
+/* ==================================== */
+
+/* .banner {
+    padding: 60px 0;
+    background-color: #dbffe3;
+    background-image: url('../img/background_img.webp');
+    background-size: contain;
+    background-position: center;
+    background-repeat: repeat;
+} */
 
 .main-content h1 {
     font-weight: 700;
