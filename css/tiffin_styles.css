@@ -29,7 +29,6 @@ body {
 
 header {
     background-color: #F9F2E6 !important;
-
 }
 
 .navbar {
@@ -443,7 +442,7 @@ header {
 .menu-section {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     /* max-width: 1000px; */
-    padding: 30px 20px;
+    padding: 30px 0px;
     background-color: #fff9f0;
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
