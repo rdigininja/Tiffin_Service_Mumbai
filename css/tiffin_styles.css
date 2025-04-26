@@ -18,7 +18,13 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: var(--text-color);
-    padding-top: 56px;
+    padding-top: 60px;
+}
+
+.txt_heading_2 {
+    font-size: 36px;
+    font-weight: 800;
+    padding-bottom: 20px;
 }
 
 header {
@@ -67,7 +73,7 @@ header {
 /* ====================================== */
 
 .banner {
-    padding: 60px 0;
+    padding: 60px 0 60px 0;
     position: relative;
     background-color: #dbffe3;
 }
@@ -152,6 +158,10 @@ header {
     background: rgba(0, 0, 0, 0.5);
     z-index: 1040;
     backdrop-filter: blur(3px);
+}
+
+.owl-stage {
+    padding: 10px 0;
 }
 
 .overlay.show {
