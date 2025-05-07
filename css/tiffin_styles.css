@@ -177,9 +177,6 @@ body {
 }
 
 @media (max-width: 767.98px) {
-    .banner {
-        padding: 40px 0;
-    }
 
     .main-content {
         text-align: center;
