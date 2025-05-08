@@ -1,5 +1,5 @@
 /* Global Styles */
-:root {
+/* :root {
     --primary-color: #ff6b6b;
     --secondary-color: #ffa502;
     --dark-color: #2f3542;
@@ -17,7 +17,7 @@
     --font-secondary: 'Open Sans', sans-serif;
     --box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     --transition: all 0.3s ease;
-}
+} */
 
 * {
     margin: 0;
