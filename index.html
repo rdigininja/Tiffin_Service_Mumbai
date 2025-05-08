@@ -21,7 +21,7 @@
 <style>
     .btn_grp {
         display: flex;
-        gap: 20px;
+        /* gap: 20px; */
     }
 
     .btn_Brochure {
@@ -76,6 +76,39 @@
             transform: scale(1);
         }
     }
+
+    @media (max-width: 525px) {
+
+        .navbar-brand img {
+            width: 110px;
+        }
+
+        .btn_grp {
+            gap: 5px;
+        }
+
+        .btn_Brochure {
+            gap: 5px;
+            font-size: 12px;
+            font-weight: 500;
+
+        }
+
+        .btn_Brochure i {
+            font-size: 18px;
+        }
+
+        .btn_whts {
+            gap: 5px;
+            font-size: 12px;
+            font-weight: 500;
+        }
+
+        .btn_whts i {
+            font-size: 18px;
+        }
+
+    }
 </style>
 
 <body>
@@ -97,7 +130,7 @@
                     </button>
                     <!-- btn-success -->
                     <button class="btn_whts ">
-                        <i class="fa-brands fa-whatsapp"></i>View Meal Plans
+                        <i class="fa-brands fa-whatsapp"></i>Quick Booking
                     </button>
                 </div>
 
