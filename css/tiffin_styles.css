@@ -1421,6 +1421,11 @@ body {
     .offer-text {
         font-size: 15px;
     }
+
+    .contact-section {
+        padding: 50px 0;
+    }
+
 }
 
 .offer-badge {
