@@ -1422,8 +1422,18 @@ body {
         font-size: 15px;
     }
 
+    /* =====footer======= */
+
     .contact-section {
         padding: 50px 0;
+    }
+
+    .contact-card {
+        padding: 20px 10px;
+    }
+
+    .quick-contact {
+        padding: 20px 10px;
     }
 
 }
