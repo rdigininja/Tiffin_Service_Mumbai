@@ -1045,6 +1045,13 @@ body {
 
 
 /* ========================= */
+#nonvegetarian-plans .btn {
+    background-color: red;
+}
+
+#nonvegetarian-plans .meal-price {
+    color: red;
+}
 
 .pricing-section {
     padding: 40px 0;
@@ -1094,6 +1101,12 @@ body {
 
 .pricing-tab.active {
     background: var(--primary-color);
+    color: white;
+}
+
+.pricing-tab.active[onclick*="nonvegetarian"] {
+    background: red;
+    /* Red for non-vegetarian */
     color: white;
 }
 
@@ -1394,6 +1407,7 @@ body {
 @media (max-width: 768px) {
     .offer_box {
         flex-direction: column;
+        border: 1px dotted #27ae60;
     }
 
     .offer-content h3 {
