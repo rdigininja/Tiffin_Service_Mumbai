@@ -25,6 +25,10 @@
     --highlight: #f39c12;
 }
 
+a{
+    text-decoration: none;
+}
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: var(--text-color);
@@ -32,7 +36,8 @@ body {
 }
 
 .header {
-    border-bottom: 0.5px solid #dbdbdb;
+    /* border-bottom: 0.5px solid #dbdbdb; */
+    /* background-color: #EFF9F0; */
 }
 
 .banner {
@@ -53,6 +58,133 @@ body {
     padding-bottom: 20px;
     text-align: center;
 }
+
+/* ------------------------ */
+
+.btn_grp {
+        display: flex;
+        /* gap: 20px; */
+    }
+
+    .btn_Brochure {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        font-size: 14px;
+        font-weight: 500;
+        border: none;
+        background-color: #fff;
+    }
+
+    .btn_Brochure i {
+        font-size: 26px;
+        color: #186d2e;
+    }
+
+    .btn_whts {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: #000;
+        gap: 5px;
+        font-size: 14px;
+        font-weight: 500;
+        border: none;
+        background-color: #fff;
+    }
+
+    .btn_whts i {
+        font-size: 26px;
+        color: #186d2e;
+        animation: whatsappPulse 2s infinite;
+    }
+
+    @keyframes whatsappPulse {
+        0% {
+            transform: scale(1);
+        }
+
+        50% {
+            transform: scale(1.11);
+            /* Increases by ~2px (26 * 0.08 ≈ 2) */
+        }
+
+        100% {
+            transform: scale(1);
+        }
+    }
+
+    @media (max-width: 525px) {
+
+        .navbar-brand img {
+            width: 118px;
+        }
+
+        .btn_grp {
+            gap: 5px;
+            overflow: hidden;
+        }
+
+        .btn_Brochure {
+            gap: 5px;
+            font-size: 12px;
+            font-weight: 500;
+
+        }
+
+        .btn_Brochure i {
+            font-size: 18px;
+        }
+
+        .btn_whts {
+            gap: 5px;
+            font-size: 12px;
+            font-weight: 500;
+        }
+
+        .btn_whts i {
+            font-size: 18px;
+        }
+
+        /* ===================== */
+
+        .why_title {
+            padding-bottom: 25px;
+            font-size: 28px;
+        }
+
+        .why_box h3 {
+            font-size: 20px;
+        }
+
+        .why_box p {
+            font-size: 14px;
+        }
+
+        /* ================================= */
+        .txt_heading_2 {
+            font-size: 28px;
+            font-weight: 800;
+            padding-bottom: 5px;
+        }
+
+        /* ============================ */
+        .section-title {
+            font-size: 2.2rem;
+            font-weight: 800;
+        }
+
+    }
+
+
+
+/* ------------------------------- */
+
+
+
 
 
 
@@ -562,6 +694,11 @@ body {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
     display: flex;
     align-items: center;
+}
+
+.area-item:hover {
+    color: #28a745;
+    transform: translateY(-2px);
 }
 
 .area-item svg {
