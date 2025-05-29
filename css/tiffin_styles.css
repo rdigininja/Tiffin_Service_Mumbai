@@ -1624,7 +1624,7 @@ body {
 }
 
 
-@media (max-width: 480px) {
+@media (max-width: 525px) {
   .why_title{
     font-size: 30px !important;
   }
