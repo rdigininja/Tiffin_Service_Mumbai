@@ -1622,3 +1622,16 @@ body {
     text-decoration: none;
     transition: all 0.3s ease;
 }
+
+
+@media (max-width: 480px) {
+  .why_title{
+    font-size: 30px !important;
+  }
+  .why_box h3 {
+    font-size: 18px !important;
+  }
+  .why_box p {
+    font-size: 14px !important;
+  }
+}
