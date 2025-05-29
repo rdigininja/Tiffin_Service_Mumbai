@@ -37,7 +37,7 @@ body {
 
 .header {
     /* border-bottom: 0.5px solid #dbdbdb; */
-    /* background-color: #EFF9F0; */
+    background-color: #eff9f07a;
 }
 
 .banner {
@@ -63,7 +63,7 @@ body {
 
 .btn_grp {
         display: flex;
-        /* gap: 20px; */
+        gap: 10px;
     }
 
     .btn_Brochure {
@@ -72,7 +72,7 @@ body {
         justify-content: center;
         align-items: center;
         gap: 5px;
-        font-size: 14px;
+        font-size: 12px;
         font-weight: 500;
         border: none;
         background-color: #fff;
@@ -90,7 +90,7 @@ body {
         align-items: center;
         color: #000;
         gap: 5px;
-        font-size: 14px;
+        font-size: 12px;
         font-weight: 500;
         border: none;
         background-color: #fff;
