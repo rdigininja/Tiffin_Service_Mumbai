@@ -1634,4 +1634,7 @@ body {
   .why_box p {
     font-size: 14px !important;
   }
+  .why_section {
+    padding: 40px 5px;
+}
 }
